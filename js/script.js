@@ -43,7 +43,7 @@ for (let i = 0; i < team.length; i++) {
     console.log("foto ", curMem.foto);
 }
 
-//MILESTONE 2
+//MILESTONE 2 + BONUS 1 E BONUS 2
 //stamperó tutte le informazioni nel DOM 
 const rowElem = document.querySelector(".row");
 let memberElems = "";
@@ -51,16 +51,15 @@ for (let i = 0; i < team.length; i++) {
     const curMemb = team[i];
     memberElems += `
     <div class="col">
-        <div class="card">
+        <div class="card mb-3">
+        <img src="img/${curMemb.foto}" class="card-img-top" alt="">
             <div class="card-body">
-                <img src="img/${curMemb.foto}" alt="">
-                <h2 class="card-title">${curMemb.nome}</h2>
-                <h4 class="card-title">${curMemb.ruolo}</h4>
+                <h4 class="card-title text-center">${curMemb.nome}</h4>
+                <p class="card-text text-center">${curMemb.ruolo}</p>
             </div>
         </div>
     </div>
     `
-
 }
 rowElem.innerHTML = memberElems;
 

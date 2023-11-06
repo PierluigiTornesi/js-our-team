@@ -1,0 +1,14 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset img */
+img{
+    max-width: 100%;
+}
+/* classe per lo sfondo del wrapper */
+.wrapper{
+    background-color:#f5f5f1 ;
+}
