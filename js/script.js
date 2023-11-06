@@ -53,13 +53,14 @@ for (let i = 0; i < team.length; i++) {
     <div class="col">
         <div class="card">
             <div class="card-body">
+                <img src="img/${curMemb.foto}" alt="">
                 <h2 class="card-title">${curMemb.nome}</h2>
                 <h4 class="card-title">${curMemb.ruolo}</h4>
-                <h6 class="card-title">${curMemb.foto}</h6>
             </div>
         </div>
     </div>
     `
-    
+
 }
 rowElem.innerHTML = memberElems;
+
